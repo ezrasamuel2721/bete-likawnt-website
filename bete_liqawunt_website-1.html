@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="am">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ቤተ ሊቃውንት | Bete Liqawunt</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Ethiopic",sans-serif;background:#faf8f2;color:#2b241b;line-height:1.7}
+header{background:#fff;border-bottom:1px solid #e4dccb;position:sticky;top:0;z-index:5}.nav{max-width:1050px;margin:auto;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-weight:800;font-size:21px}.brand small{display:block;font-size:11px;letter-spacing:1px;color:#876b38}.lang{border:1px solid #c9b37c;background:#fff8df;border-radius:20px;padding:7px 13px;font-weight:700}
+.hero{max-width:1050px;margin:auto;padding:70px 20px 55px;text-align:center}.seal{font-size:48px}.hero h1{font-size:42px;margin:8px 0 0}.hero h2{font-size:20px;font-weight:600;color:#6c593b;margin:5px 0 18px}.hero p{max-width:700px;margin:0 auto 25px;color:#5c5144}.btn{display:inline-block;background:#8b6a2f;color:white;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:800;box-shadow:0 4px 12px #0001}.btn.secondary{background:#fff;color:#765a28;border:1px solid #cbb986;margin-left:8px}
+section{max-width:1050px;margin:auto;padding:42px 20px}h3{text-align:center;font-size:28px;margin:0 0 24px}.about{background:#fff;border-top:1px solid #eee5d4;border-bottom:1px solid #eee5d4}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{background:white;border:1px solid #e7dfcf;border-radius:12px;padding:20px;text-align:center}.icon{font-size:30px}.card h4{margin:8px 0 4px}.card p{margin:0;color:#665b4e;font-size:14px}.call{text-align:center;background:#efe5c9;border-radius:18px;padding:32px 18px}.call strong{font-size:34px;display:block;color:#755726;margin:5px}.address{text-align:center}.footer{background:#29231b;color:#f5efe2;text-align:center;padding:28px 18px;font-size:14px}.footer span{color:#d9bd76}
+@media(max-width:700px){.nav{padding:12px 14px}.hero{padding:48px 18px}.hero h1{font-size:34px}.hero h2{font-size:17px}.cards{grid-template-columns:1fr 1fr}.btn{display:block;margin:10px auto;max-width:280px}.btn.secondary{margin:10px auto}section{padding:34px 16px}}
+@media(max-width:390px){.cards{grid-template-columns:1fr}.brand{font-size:18px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">ቤተ ሊቃውንት<small>BETE LIQAWUNT</small></div><button class="lang" onclick="toggleLang()">AM / EN</button></div></header>
+
+<main>
+<div class="hero" id="hero">
+<div class="seal">✝️</div>
+<h1>ቤተ ሊቃውንት</h1>
+<h2>የኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን</h2>
+<p id="heroText">የመንፈሳዊ ጥያቄና መልስ የጥሪ ማዕከል። መንፈሳዊ ጥያቄዎትን ይጠይቁ፤ ተገቢ መልስና መመሪያ ያግኙ።</p>
+<a class="btn" href="tel:2721">☎ 2721 ይደውሉ</a>
+<a class="btn secondary" href="#services">አገልግሎቶች</a>
+</div>
+
+<section class="about"><h3 id="aboutTitle">ስለ ቤተ ሊቃውንት</h3><p id="aboutText">ቤተ ሊቃውንት በየኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን እምነትና ትምህርት መሠረት ለሚነሱ መንፈሳዊ ጥያቄዎች መልስና መመሪያ ለማቅረብ የሚያገለግል የጥሪ ማዕከል ነው።</p></section>
+
+<section id="services"><h3 id="servicesTitle">አገልግሎቶች</h3><div class="cards">
+<div class="card"><div class="icon">❓</div><h4>ጥያቄና መልስ</h4><p>የመንፈሳዊ ጥያቄዎችን ያቅርቡ።</p></div>
+<div class="card"><div class="icon">📖</div><h4>መንፈሳዊ ትምህርት</h4><p>የእምነትና ትምህርት ይዘቶችን ያግኙ።</p></div>
+<div class="card"><div class="icon">☎️</div><h4>ጥሪ ማዕከል</h4><p>በ2721 ለማግኘት ይደውሉ።</p></div>
+<div class="card"><div class="icon">🙏</div><h4>መንፈሳዊ መመሪያ</h4><p>ተገቢ መንፈሳዊ መመሪያ ያግኙ።</p></div>
+</div></section>
+
+<section><div class="call"><h3 id="callTitle">ጥያቄ አለዎት?</h3><strong>2721</strong><p id="callText">መንፈሳዊ ጥያቄዎትን ለማቅረብ ይደውሉ።</p><a class="btn" href="tel:2721">☎ 2721</a></div></section>
+<section class="address"><h3 id="addressTitle">አድራሻ</h3><p>📍 አዲስ አበባ፣ ኢትዮጵያ<br>📍 Addis Ababa, Ethiopia</p></section>
+</main>
+<footer class="footer">ቤተ ሊቃውንት • <span>BETE LIQAWUNT</span><br>© 2026</footer>
+
+<script>
+let en=false;
+function toggleLang(){
+ en=!en;
+ document.documentElement.lang=en?'en':'am';
+ document.getElementById('heroText').textContent=en?'A spiritual questions and answers call center of the Ethiopian Orthodox Tewahedo Church. Ask your spiritual questions and receive appropriate guidance.':'የመንፈሳዊ ጥያቄና መልስ የጥሪ ማዕከል። መንፈሳዊ ጥያቄዎትን ይጠይቁ፤ ተገቢ መልስና መመሪያ ያግኙ።';
+ document.getElementById('aboutTitle').textContent=en?'About Bete Liqawunt':'ስለ ቤተ ሊቃውንት';
+ document.getElementById('aboutText').textContent=en?'Bete Liqawunt is a call center providing spiritual answers and guidance based on the faith and teachings of the Ethiopian Orthodox Tewahedo Church.':'ቤተ ሊቃውንት በየኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን እምነትና ትምህርት መሠረት ለሚነሱ መንፈሳዊ ጥያቄዎች መልስና መመሪያ ለማቅረብ የሚያገለግል የጥሪ ማዕከል ነው።';
+ document.getElementById('servicesTitle').textContent=en?'Our Services':'አገልግሎቶች';
+ document.getElementById('callTitle').textContent=en?'Have a question?':'ጥያቄ አለዎት?';
+ document.getElementById('callText').textContent=en?'Call to ask your spiritual question.':'መንፈሳዊ ጥያቄዎትን ለማቅረብ ይደውሉ።';
+ document.getElementById('addressTitle').textContent=en?'Address':'አድራሻ';
+}
+</script>
+</body></html>
